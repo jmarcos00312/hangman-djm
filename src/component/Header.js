@@ -1,11 +1,25 @@
 import React from 'react'
+import NavBar from './NavBar'
+import styled from 'styled-components'
 
-function Header() {
+
+function Header({ }) {
     return (
         <div>
-            <h1>Header</h1>
+            <div className="header">
+                <NavBar  />
+            </div>
         </div>
     )
 }
+
+const Container = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: "white";
+`
+
 
 export default Header
